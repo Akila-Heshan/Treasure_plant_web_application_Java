@@ -20,17 +20,19 @@ A full-stack e-commerce platform designed to provide a seamless online shopping 
 
 * Shopping Cart & Checkout: Add products to cart, manage orders, and complete purchases.
 
-* Customer Reviews & Comments: Users can leave reviews and comments on products.
-
-* Wishlist: Users can save favorite products to purchase later.
+* Customer Reviews : Users can leave reviews on products.
 
 * Secure Payment: Integrated PayHere payment gateway for secure payment.
   
-* Seller: Add / Remove Product, View Added Products and view orders. 
-
-* Admin Panel: Manage seller.
+* Seller: Add / Remove Product, View Products history. 
 
 * Responsive UI: Optimized for different screen sizes.
+  
 
-## Screenshort 
+## <a href="https://www.linkedin.com/posts/akila-mangala-75654b2a3_ecommerce-java-bootstrap-activity-7259825689518891008-UkcV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFktmm4Bc0-rC5FnMHwW2wSHkPGOtZahChY">Check out my Project video on LinkdIen</a>
+
+
+
+
+
 
