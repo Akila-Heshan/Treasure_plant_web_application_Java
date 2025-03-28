@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PRODUCT REGISTRATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="asserts/css/bootstrap.css"/>
+        <link rel="stylesheet" href="asserts/css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body onload="loaSellerNav()" >
+        <div class="col-12 p-0 m-0" id="nav-set"></div>
+
+        <div class="container-fluid  d-flex align-items-center flex-column mb-4" >
+
+            <div class="col-10 row justify-content-center mt-5" >
+
+                <div class="d-flex flex-column col-12 col-lg-6">
+                    <label>Brand</label>
+                    <select id="brand" class="btn  border-dark border-2" >
+                        <option value="0" >Select</option>
+                    </select>
+                </div>
+
+                <div class="d-flex flex-column col-12 col-lg-6">
+                    <label>Category</label>
+                    <select id="category" class="btn border-dark border-2" >
+                        <option value="0" >Select</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="col-10 mt-4" >
+
+                <label>Title</label>
+                <input type="text" id="title" class="form-control" placeholder="Title">
+
+            </div>
+
+            <div class="col-10 mt-4" >
+
+                <label>Description</label>
+                <textarea class="form-control " id="description" rows="5" ></textarea>
+
+            </div>
+
+            <div class="col-10 mt-4 row justify-content-center" >
+
+                <div class=" col-12 col-lg-6">
+                    <label>Price</label>
+                    <input id="price" type="text" class="form-control" pattern="^\d+(\.\d{2})?$" placeholder="0.00">
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center column-gap-3" >
+                    <label >Discount (%)</label>
+                    <input class="form-control" type="range" name="weight" id="discount" value="0" min="0" max="100" oninput="range_weight_disp.value = discount.value">
+                    <output  id="range_weight_disp"></output>
+                </div>
+
+            </div>
+
+            <div class="col-10 mt-4 row justify-content-center" >
+
+                <div class=" col-12 col-lg-6">
+                    <label>Available Quantity</label>
+                    <input id="qty" type="text" class="form-control"  placeholder="Available Quantity">
+                </div>
+                
+                <div class=" col-12 col-lg-6">
+                    <label>Product Weight (kg)</label>
+                    <input id="weight" type="text" class="form-control"  placeholder="Product Weight">
+                </div>
+
+            </div>
+            
+            <div class="col-10 mt-4 row justify-content-center" >
+                
+                <div class="col-12 col-lg-3">
+                    <label>Image 1</label>
+                    <input id="image1" type="file" class="form-control"/>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label>Image 1</label>
+                    <input id="image2" type="file" class="form-control"/>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label>Image 1</label>
+                    <input id="image3" type="file" class="form-control"/>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label>Image 1</label>
+                    <input id="image4" type="file" class="form-control"/>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <label>Image 1</label>
+                    <input id="image5" type="file" class="form-control"/>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 d-flex justify-content-center my-5">
+                <button class="btn btn-primary" onclick="productListing()" >Save Product</button>
+            </div>
+
+        </div>
+
+        <script src="asserts/js/product-registration.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+</html>

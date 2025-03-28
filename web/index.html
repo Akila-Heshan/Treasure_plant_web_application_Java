@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>HOME</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="asserts/css/bootstrap.css"/>
+        <link rel="stylesheet" href="asserts/css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body onload="loadNav()" >
+        <div class="col-12 p-0 m-0" id="nav-set"></div>
+
+        <div class="mb-5" >
+
+            <div class="col-12 d-flex justify-content-center row g-3 mt-3 bg-warning p-0 m-0" >
+                <a href="search.html" class="col-9 col-md-7 col-lg-6 col-xl-5 text-decoration-none p-0">
+                    <input type="text" class="form-control "  id="searchText" placeholder="Search in Tech Life">
+                </a>
+                <div class="col-1 text-decoration-none">
+                    <a href="search.html" class="btn btn-primary mb-3"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide mt-4 col-12 ">
+                <div class="carousel-indicators bg-dark opacity-75 rounded-4">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active text-black" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner  w-100 d-flex justify-content-center align-items-md-center ">
+                    <!-- <div class="carousel-item active col-auto">
+                     <img src="asserts/image/26d9cce3a9db1654029743-b21af4e241f71628571498-gif-2.webp" class="d-block" alt="...">
+                 </div>
+                 <div class="carousel-item col-auto">
+                     <img src="asserts/image/apple-iphone-12-2.webp" class="d-block " alt="...">
+                 </div>-->
+
+                    <div class="carousel-item active col-3  m-5" >
+                        <div class="d-flex justify-content-center">
+                            <img src="asserts/image/9919.jpg" class="d-block h-50-fix" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item col-3  m-5  justify-content-center" >
+                        <div class="d-flex justify-content-center">
+                            <img src="asserts/image/apple-iphone-12-2.webp" class="d-block h-50-fix" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item col-3  m-5  justify-content-center" >
+                        <div class="d-flex justify-content-center">
+                            <img src="asserts/image/Samsung-Galaxy-S24-Series.webp" class="d-block h-50-fix" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="fs-3  fw-bold text-center m-3" >Our Best Products</div>
+
+            <div class="col-12 d-flex justify-content-center row" id="product-container" >
+
+                <a href="#" class="card m-3 text-decoration-none" style="width: 18rem;" id="product">
+                    <img src="asserts/image/silver-1.webp" class="card-img-top m-2 p-0" id="product-image" alt="...">
+                    <div class="card-body">
+                        <div class="fw-bold fs-5 m-2" id="product-title" >iPhone 15 Pro Black 256GB</div>
+
+                        <div class="col-12 d-flex  mb-2" > 
+                            <div  class="text-danger fs-5 m-2 text-decoration-line-through col-auto" id="product-price-div"  >Rs. <span id="product-price" >1200</span></div> 
+                            <div class="mx-2 text-success fs-5 text-decoration-none col-auto m-2">Rs. <span id="product-discount" >4442</span></div>
+                        </div>
+
+                        <div class="d-flex m-2" >
+                            <div class="p-0 m-1"  ><span id="product-review" ></span> (<span id="product-review-count" ></span>)</div>
+                            <div><i class="bi bi-star-fill text-warning p-0 mt-1"></i></div>
+                        </div>
+                    </div>
+                </a> 
+
+            </div>
+
+        </div> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="asserts/js/LoadUser.js"></script>
+        <script src="asserts/js/home.js"></script>
+
+    </body>
+</html>

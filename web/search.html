@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>SEARCH</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="asserts/css/bootstrap.css"/>
+        <link rel="stylesheet" href="asserts/css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body onload="loadNav()" >
+        <div class="col-12 p-0 m-0" id="nav-set"></div>
+
+        <div class="mb-5" >
+
+            <div class="col-12 d-flex justify-content-center row g-3 mt-3 bg-warning p-0 m-0" >
+                <div class="col-9 col-md-7 col-lg-6 col-xl-5 text-decoration-none p-0">
+                    <input type="text" class="form-control "  id="searchText" placeholder="Search in Tech Life">
+                </div>
+                <div class="col-1 text-decoration-none">
+                    <button  class="btn btn-primary mb-3" onclick="searchProduct(0)" ><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg  bg-warning ">
+                <div class="container-fluid d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  justify-content-center flex-column flex-md-row" id="navbarSupportedContent">
+
+                        <div class="btn-group col-auto  p-0 m-2 d-flex align-items-center flex-column">
+                            <label class="" >Brand</label>
+                            <select class="form-control" id="brand" >
+                                <option value="0" >Select</option>
+                            </select>
+                        </div>
+
+                        <div class="btn-group col-auto  p-0 m-2 d-flex flex-column">
+                            <label class="" >Category</label>
+                            <select class="form-control" id="category" >
+                                <option value="0" >Select</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2 p-0 m-3 mt-0 mb-0">
+                            <label>Set Max Price <span id="priceValue"></span></label>
+                            <input type="range" class="form-range" value="50000" min="0" max="50000" step="5000" onchange="changePrice()" id="price">
+                        </div>
+
+                        <div class="btn-group col-auto  p-0 m-2 d-flex flex-column">
+                            <label class="" >Sort</label>
+                            <select class="form-control" id="sort" >
+                                <option  >Sort by Latest</option>
+                                <option  >Sort by Oldest</option>
+                                <option  >Sort by Name</option>
+                                <option >Sort by Price</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="col-12 d-flex justify-content-center row mt-4" id="product-container">
+
+                <a href="#" class="card m-3 text-decoration-none" id="product" style="width: 18rem;">
+                    <img src="asserts/image/laptop-floating-angled-open.webp" id="product-img" class="card-img-top m-2 p-0" alt="...">
+                    <div class="card-body">
+                        <div class="fw-bold fs-5 m-2" id="product-title" >iPhone 15 Pro Black 256GB</div>
+
+                        <div class="col-12 d-flex  mb-2" > 
+                            <div  class="text-danger fs-5 m-2 text-decoration-line-through col-auto" id="product-price" >Rs.150000</div> 
+                            <div class="mx-2 text-success fs-5 text-decoration-none col-auto m-2" id="product-discount" >Rs.120000</div>
+                        </div>
+
+                        <div class="d-flex m-2" >
+                            <div class="p-0 m-1" >4.3 (3)</div>
+                            <div><i class="bi bi-star-fill text-warning p-0 mt-1"></i></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-12 d-flex justify-content-center mt-4" id="pagination-container" >
+
+                <button class="btn btn-primary p-2 m-2" id="pagination-button" >PREV</button>
+
+            </div>
+
+        </div> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="asserts/js/LoadUser.js"></script>
+        <script src="asserts/js/search.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+</html>

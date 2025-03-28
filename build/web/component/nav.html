@@ -1,0 +1,61 @@
+<nav class="navbar fuser navbar-expand-lg  p-2  mt-0 " id="nav">
+    <div class="container-fluid ">
+
+        <a href="index.html" class="row-cols-auto d-flex align-items-center  m-0 m-lg-3 mt-lg-0 mb-lg-0 ms-0 " style="text-decoration: none;" >
+
+            <!--                <img src="./image/logo.png" class="nav-logo p-0 " alt="treasure plant" style="margin-right: 10px;">-->
+
+            <p class="p-0 m-0 fs-5 text-black "  >Treasure Plant</p>
+
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end fuser" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Treasure Plants</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item nav-pro">
+                        <a class="nav-link text-black fw-bold " id="home" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item nav-pro">
+                        <a class="nav-link text-black fw-bold" id="about" href="#">ABOUT</a>
+                    </li>                    
+                    <li class="nav-item nav-pro ">
+                        <a class="nav-link text-black fw-bold" id="cart" href="cart.html">CART</a>
+                    </li>
+                    <li class="nav-item nav-pro ">
+                        <a class="nav-link text-black fw-bold" id="b" href="order-history.html">Order History</a>
+                    </li>
+                    <li class="nav-item nav-pro ">
+                        <a class="nav-link text-black fw-bold" id="us" href="seller.html">JOIN US</a>
+                    </li>
+
+                    <li class="nav-item dropdown  nav-pro d-flex align-items-center " id="user" >
+                        <a href="#" class="nav-link dropdown-toggle p-0 m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="" style="margin-left: 10px;" id="user-name" ></span>                          
+                        </a> 
+
+                        <ul class="dropdown-menu">
+                            <li><p role="button" onclick="" >Update Details</p></li>
+                            <li><p role="button" onclick="logout()" >Log Out</p></li>
+                        </ul>
+
+                    </li>
+
+
+                    <li class="nav-item nav-pro ">
+                        <a class="nav-link text-black " href="signIn.html">SIGN IN</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

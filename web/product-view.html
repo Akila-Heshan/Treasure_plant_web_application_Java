@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRODUCT VIEW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="asserts/css/bootstrap.css"/>
+        <link rel="stylesheet" href="asserts/css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body onload="loadProduct()" >
+
+        <div class="col-12 p-0 m-0" id="nav-set"></div>
+
+        <div class="container-fluidn mt-5" >
+
+            <div class="col-12 d-flex justify-content-center row " >
+
+                <div class="col-12  col-xl-4 d-flex align-items-center flex-column " >
+
+                    <div class="col-12 d-flex justify-content-center align-items-center h-60-fix " >
+                        <img src="asserts/image/Samsung-Galaxy-S24-Series.webp" id="img-main" class="h-75 " alt="Image Download Error"/>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mt-3" >
+
+                        <div class="col-2 bg-secondary m-2 d-flex justify-content-center align-items-center" onclick="changeImage(1)" ><img id="img-sub-1" src="asserts/image/silver-1.webp" class="product-view-img-width" alt="alt"/></div>
+                        <div class="col-2 bg-secondary m-2 d-flex justify-content-center align-items-center" onclick="changeImage(2)" ><img id="img-sub-2" src="asserts/image/apple-iphone-12-2.webp" class="product-view-img-width" alt="alt"/></div>
+                        <div class="col-2 bg-secondary m-2 d-flex justify-content-center align-items-center" onclick="changeImage(3)" ><img id="img-sub-3" src="asserts/image/Samsung-Galaxy-S24-Series.webp" class="product-view-img-width" alt="alt"/></div>
+                        <div class="col-2 bg-secondary m-2 d-flex justify-content-center align-items-center" onclick="changeImage(4)" ><img id="img-sub-4" src="asserts/image/Samsung-Galaxy-S24-Series.webp" class="product-view-img-width" alt="alt"/></div>
+                        <div class="col-2 bg-secondary m-2 d-flex justify-content-center align-items-center" onclick="changeImage(5)" ><img id="img-sub-5" src="asserts/image/Samsung-Galaxy-S24-Series.webp" class="product-view-img-width" alt="alt"/></div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-10  col-md-10 col-xl-6  " >
+
+                    <h3 class="mt-3 text-break" id="title" >Apple iPhone 15 Pro Max - EvoStore</h3>
+
+                    <h6 class="my-4">Published ON : <span id="date-time" ></span></h6>
+                    <h6 class="my-4">Brand : <span id="brand" >Nike</span></h6>
+
+                    <div class="col-12" >
+                        <h2 class="text-danger mt-4" >Price : Rs.&nbsp;<span id="price" >220,000.00</span></h2>
+                        <h5 class="text-decoration-line-through" id="discount" >Rs.250,000</h5>
+                    </div>
+
+                    <h6 class="my-4" >Sold : <span id="sold" >10</span></h6>
+                    <h6 class="my-3"  >Available Quantity : <span id="qty" >25</span></h6>
+
+                    <p class="p-0  fs-6"  >Quantity <button class="btn btn-primary text-white m-2" onclick="quantityMinus()" ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                            </svg></button><span class="fw-bold" id="use-qty" >1</span><button class="btn btn-primary text-white m-2" onclick="quantityPlus()" ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg></button>                  
+
+                        <!--                                            <button class="btn bg-white text-danger m-4 mt-0 mb-0"  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                                                                     </svg></button>-->
+
+                    </p>                 
+
+                    <div class="col-12 row justify-content-center align-items-center column-gap-4 m-0 p-0" >
+                        <button class="btn btn-success col-12 col-lg-5 m-2 m-lg-0"  >Buy Now</button>
+                        <button class="btn btn-info col-12 col-lg-5 m-2 m-lg-0" id="add-to-cart" >Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 d-flex  align-items-center my-5 flex-column" >
+
+
+                <div class="my-3 col-10" >
+
+                    <h3>Reviews</h3>
+
+                    <p class="my-3 fs-1 fw-bold m-0 p-0" id="review-container" ><span id="review" >4.3</span><span class="text-warning" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg></span> <span class="fs-6 fw-light" ><span id="review-count" >8</span> VOTES</span></p>
+
+                </div>
+
+                <div class="co-11 d-flex align-items-center justify-content-center column-gap-3 m-4" >
+
+                    <button class="border-white bg-white shadow-none shadow " id="s1" onclick="star1(true)" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill  p-0 m-0" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg></button>            
+                    <button class="border-white bg-white shadow-none shadow"  id="s2" onclick="star2(true)" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill p-0 m-0" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg></button>            
+                    <button class="border-white bg-white shadow-none shadow" id="s3" onclick="star3(true)" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill p-0 m-0" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg></button>            
+                    <button class="border-white bg-white shadow-none shadow" id="s4" onclick="star4(true)" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill p-0 m-0" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg></button>           
+                    <button class="border-white bg-white shadow-none shadow" id="s5" onclick="star5(true)" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill p-0 m-0" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg></button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-12 d-flex  align-items-center my-5 flex-column" >
+
+                <h3>Product Description</h3>
+
+                <div class="col-10 product-view-description-background fs-6 my-3 p-4 rounded-3 text-break" id="description"></div>
+
+            </div>
+
+            <h3 class="text-center mb-4" >Related Products</h3>
+
+            <div class="col-12 d-flex justify-content-center row mb-5" id="product-container">
+
+                <a href="#" class="card m-3 text-decoration-none" style="width: 18rem;" id="product">
+                    <img src="asserts/image/silver-1.webp" class="card-img-top m-2 p-0" id="product-image" alt="...">
+                    <div class="card-body">
+                        <div class="fw-bold fs-5 m-2" id="product-title" >iPhone 15 Pro Black 256GB</div>
+
+                        <div class="col-12 d-flex  mb-2" > 
+                            <div  class="text-danger fs-5 m-2 text-decoration-line-through col-auto" id="product-price-div"  >Rs. <span id="product-price" >1200</span></div> 
+                            <div class="mx-2 text-success fs-5 text-decoration-none col-auto m-2">Rs. <span id="product-discount" >4442</span></div>
+                        </div>
+
+                        <div class="d-flex m-2" >
+                            <div class="p-0 m-1"  ><span id="product-review" ></span> (<span id="product-review-count" ></span>)</div>
+                            <div><i class="bi bi-star-fill text-warning p-0 mt-1"></i></div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="asserts/js/LoadUser.js"></script>
+        <script src="asserts/js/product-view.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+</html>

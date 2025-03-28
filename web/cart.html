@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>CART</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="asserts/css/bootstrap.css"/>
+        <link rel="stylesheet" href="asserts/css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+
+        <div class="col-12 p-0 m-0" id="nav-set"></div>
+
+        <div class="container-fluid" >
+
+            <div class="col-12" id="cart-item-container" >
+
+                <div class="col-10 row  m-0 p-0 mt-3 mb-3 d-flex justify-content-center bg-body border-dark border-2" id="cart-item-row"  >
+
+                    <div class=" col-4 col-lg-2 p-0 m-0 d-flex align-items-center">
+                        <a href="#" id="cart-item-a">
+                            <img src="asserts/image/Samsung-Galaxy-S24-Series.webp" id="cart-item-img"  class="col-12 m-0 m-lg-3" alt="Image not Download" />
+                        </a>
+                    </div>
+
+                    <div class="col-10  d-flex justify-content-center  p-0 m-0 " >
+
+                        <div class="col-11 m-3" >
+
+                            <a href="#" class="fs-5 text-justify text-break col-11 mb-1 mb-2 mb-lg-0 text-decoration-none  text-black" id="cart-item-title" >fgsd fhg sdfhgdf sh fdg</a>
+
+                            <p class="p-0 fs-6 mb-0" id="cart-item-discount" >Price <span>100000.00</span> </p>
+                            <p class="p-0 fs-6 m-0 mb-2 text-decoration-line-through" id="cart-item-price-div" ><span id="cart-item-price" >150000.00</span></p>
+
+                            <p class="p-0  fs-6"  >Quantity <button id="minus" class="btn btn-primary text-white m-2" ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                    </svg></button><span class="fw-bold" id="13" ><span id="use-qty" >1</span></span><button id="plus" class="btn btn-primary text-white m-2" ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                    </svg></button>                  
+
+                            </p>     
+
+                            <div class="col-12 row justify-content-center align-items-center m-0 p-0 column-gap-3" >
+
+                                <button class="btn btn-danger col-12 col-lg-3 m-2 m-lg-0" onclick="" >Remove</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+            </div>
+
+            <div class="m-2" >
+
+                <p class="fs-5 fw-bold mt-3" >Total Quantity :<span class="fw-lighter" id="cart-total-qty" ></span></p>
+                <p class="fs-5 fw-bold" >Total : Rs. <span class="fw-lighter" id="cart-total" ></span></p>
+
+            </div>
+
+            <div class="col-12 d-flex row justify-content-center column-gap-3 mb-4" >
+
+                <a href="checkout.html" class="btn btn-primary col-11 col-lg-3 mb-3 mb-lg-0" >Check Out</a>
+                <button class="btn btn-danger col-11 col-lg-3 "  >Clear</button>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="asserts/js/LoadUser.js"></script>
+        <script src="asserts/js/cart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

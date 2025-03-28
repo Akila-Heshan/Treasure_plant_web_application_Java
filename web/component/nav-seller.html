@@ -1,0 +1,66 @@
+<nav class="navbar fuser navbar-expand-lg  p-2  mt-0 " id="nav">
+        <div class="container-fluid ">
+
+            <a href="index.php" class="row-cols-auto d-flex align-items-center  m-0 m-lg-3 mt-lg-0 mb-lg-0 ms-0 " style="text-decoration: none;" >
+
+<!--                <img src="./image/logo.png" class="nav-logo p-0 " alt="treasure plant" style="margin-right: 10px;">-->
+    
+                <p class="p-0 m-0 fs-5 text-black "  >Treasure Plant</p>
+    
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="offcanvas offcanvas-end fuser" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Treasure Plants</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item nav-pro">
+                      <a class="nav-link text-black fw-bold " id="home" aria-current="page" href="seller-home.html">HOME</a>
+                    </li>
+                    <li class="nav-item nav-pro">
+                      <a class="nav-link text-black fw-bold" id="about" href="#">ABOUT</a>
+                    </li>                    
+                    <li class="nav-item nav-pro">
+                      <a class="nav-link text-black fw-bold" id="about" href="product-history.html">PRODUCT HISTORY</a>
+                    </li>                    
+                    <li class="nav-item nav-pro ">
+                      <a class="nav-link text-black fw-bold" id="cart" href="product-registration.html">PRODUCT LISTING</a>
+                    </li>
+
+                        <li class="nav-item dropdown  nav-pro ">
+                          <a href="#" class="nav-link dropdown-toggle p-0 m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+<!--                            <div class=" row-cols-auto align-items-center  pr-div mt-2 mt-lg-0" >
+
+                                <img src="../asserts/image/user.jpg" class="p-0 m-0 pr-img" alt="">
+                                
+                              <span class="" style="margin-left: 10px;" >Akila Heshan</span>
+
+                            </div>-->
+                          
+                          </a> 
+
+                          <ul class="dropdown-menu">
+                            <li><p role="button" onclick="" >Update Details</p></li>
+                            <li><p role="button" onclick="logout()" >Log Out</p></li>
+                          </ul>
+
+                        </li>
+
+
+                        <li class="nav-item nav-pro ">
+                          <a class="nav-link text-black " href="seller.html">SIGN IN</a>
+                        </li>
+              
+                 </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
